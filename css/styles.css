@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'opensans-regular';
+  src:  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-bold';
+  src:  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-extrabold';
+  src:  url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-semibold';
+  src:  url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'opensans-light';
+  src:  url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+.responsive-tabs.nav-tabs {
+    position: relative;
+    z-index: 10;
+    height: 42px;
+    overflow: visible;
+  }
+  @media (min-width: 768px) {
+    .responsive-tabs.nav-tabs {
+      border:none;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+    }
+  }
+  @media (max-width: 768px) {
+    .responsive-tabs.nav-tabs {
+      display: block;
+      flex-wrap: none;
+    }
+  }
+  .responsive-tabs.nav-tabs i.fa {
+    position: absolute;
+    top: 14px;
+    right: 22px;
+  }
+  .responsive-tabs.nav-tabs i.fa.fa-caret-up {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .responsive-tabs.nav-tabs i.fa {
+      display: none;
+    }
+  }
+  .responsive-tabs.nav-tabs > li {
+    /* display: none; */
+    float: none;
+    text-align: center;
+  }
+  .responsive-tabs.nav-tabs > li:last-of-type > a {
+    margin-right: 0;
+  }
+  .responsive-tabs.nav-tabs > li > a {
+    margin-right: 0;
+    /* border: 1px solid #DDDDDD; */
+  }
+  @media (min-width: 768px) {
+    .responsive-tabs.nav-tabs > li > a {
+      margin-right: 4px;
+    }
+  }
+  .responsive-tabs.nav-tabs > li.active {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    .responsive-tabs.nav-tabs > li {
+      display: block;
+      float: left;
+    }
+  }
+  .responsive-tabs.nav-tabs.open i.fa.fa-caret-up {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    .responsive-tabs.nav-tabs.open i.fa.fa-caret-up {
+      display: none;
+    }
+  }
+  .responsive-tabs.nav-tabs.open i.fa.fa-caret-down {
+    display: none;
+  }
+  .responsive-tabs.nav-tabs.open > li {
+    display: block;
+  }
+  .tab-content p{
+    text-align: justify;
+  }
+body{
+  overflow-x: hidden;
+}
+.header-inner{
+  background: #f2f2f2;
+}
+@media(min-width:768px){
+  .header-inner .row{
+    flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+}
+
+.heading {
+    margin:0;
+    color:#000;
+    padding: 20px;
+    background: #121212; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #121212, #5b7b9a); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #121212, #5b7b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: inherit;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+.nav-item a{
+    font:400 20px "opensans-regular";
+    line-height: 28px;
+    color:#000;
+}
+.tab-pane{
+    font:400 18px "opensans-regular";
+    line-height: 30px;
+    color:#000;
+}
+.main-img{
+    height:350px;
+    width:100%;
+    object-fit:cover;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border:none;
+  background:#95b9c3;
+  border-radius:0;
+  color:#fff;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border:none;
+}
+.tab-content h2{
+  font: 500 20px "opensans-semibold";
+  line-height: 28px;
+  margin: 30px 0 10px;
+}
+.w-5{
+  width:20%;
+}
+.hero-banner{
+  position:relative;
+}
+.overlay-text{
+  position:absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: "opensans-bold";
+  width: 100%;
+  height: 100%;
+}
+@media(max-width:767px){
+  .heading{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .responsive-tabs.nav-tabs{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+    height:auto;
+  }
+  .overlay-text{
+    text-align: center;
+    font-size: 22px;
+  }
+  .tab-content{
+    padding:0 16px;
+  }
+  #contact p{
+    font:500 15px "opensans-regular";
+    line-height:18px;
+  }
+  .tab-content p,
+  .tab-content ul li{
+    font-size:16px;
+    line-height:22px;
+    text-align: justify;
+  }
+  .nav-item a{
+    font-size:16px;
+    line-height:18px;
+  }
+  header{
+    text-align: center;
+  }
+}
+@media(min-width:768px) and (max-width:991px){
+  .heading{
+    font-size:19px;
+  }
+  .overlay-text{
+    text-align:center;
+  }
+}
